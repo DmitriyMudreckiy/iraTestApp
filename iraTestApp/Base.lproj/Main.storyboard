@@ -38,6 +38,13 @@
                                     <action selector="pressButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUM-HO-hX8"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ckG-En-aNM">
+                                <rect key="frame" x="148" y="332" width="118" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Cly-dK-5GU"/>
+                                    <constraint firstAttribute="height" constant="232" id="paN-7Q-lR5"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,6 +53,9 @@
                             <constraint firstItem="5e6-Xf-vCL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="45N-hT-2xI"/>
                             <constraint firstItem="Cpe-vB-5PV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nz-kJ-pfO"/>
                             <constraint firstItem="5e6-Xf-vCL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z03-hE-egL"/>
+                            <constraint firstItem="ckG-En-aNM" firstAttribute="top" secondItem="5e6-Xf-vCL" secondAttribute="bottom" constant="191" id="pfR-hS-aY0"/>
+                            <constraint firstItem="ckG-En-aNM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sED-DE-G4v"/>
+                            <constraint firstItem="ckG-En-aNM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v3Y-xh-tlq"/>
                         </constraints>
                     </view>
                     <connections>
