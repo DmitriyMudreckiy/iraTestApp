@@ -16,51 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hallo Worlds!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-Xf-vCL">
-                                <rect key="frame" x="121.5" y="105" width="171" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-vB-5PV">
-                                <rect key="frame" x="153.5" y="787" width="107" height="55"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RM-CS-IFD">
+                                <rect key="frame" x="87" y="81" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-VE-MwK">
+                                <rect key="frame" x="87" y="458" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go4-Ms-v5Q">
+                                <rect key="frame" x="227" y="786" width="100" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="Ywl-zn-Ac8"/>
-                                    <constraint firstAttribute="width" constant="107" id="sM5-4l-NeQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="Bc2-eO-kAG"/>
+                                    <constraint firstAttribute="height" constant="50" id="YUv-mB-YID"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="gray" title="Klick"/>
                                 <connections>
-                                    <action selector="pressButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUM-HO-hX8"/>
+                                    <action selector="pressButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2A-o7-3Zq"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ckG-En-aNM">
-                                <rect key="frame" x="148" y="332" width="118" height="233"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="Cly-dK-5GU"/>
-                                    <constraint firstAttribute="height" constant="232" id="paN-7Q-lR5"/>
-                                </constraints>
-                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFM-iw-YyK">
+                                <rect key="frame" x="87" y="270" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cpe-vB-5PV" secondAttribute="bottom" constant="20" id="3Ic-H5-eVo"/>
-                            <constraint firstItem="5e6-Xf-vCL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="45N-hT-2xI"/>
-                            <constraint firstItem="Cpe-vB-5PV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nz-kJ-pfO"/>
-                            <constraint firstItem="5e6-Xf-vCL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z03-hE-egL"/>
-                            <constraint firstItem="ckG-En-aNM" firstAttribute="top" secondItem="5e6-Xf-vCL" secondAttribute="bottom" constant="191" id="pfR-hS-aY0"/>
-                            <constraint firstItem="ckG-En-aNM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sED-DE-G4v"/>
-                            <constraint firstItem="ckG-En-aNM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v3Y-xh-tlq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Go4-Ms-v5Q" secondAttribute="bottom" constant="26" id="epX-fd-pBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Go4-Ms-v5Q" secondAttribute="trailing" constant="87" id="vIN-ys-USj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonOne" destination="Cpe-vB-5PV" id="LLr-gz-Vom"/>
-                        <outlet property="helloWorldLabel" destination="5e6-Xf-vCL" id="G2t-Wp-8Vf"/>
+                        <outlet property="buttonOne" destination="Go4-Ms-v5Q" id="PQ0-ko-u4r"/>
+                        <outlet property="elementViewOne" destination="5RM-CS-IFD" id="7eg-YT-W6U"/>
+                        <outlet property="elementViewThree" destination="zRX-VE-MwK" id="FoG-Mp-egy"/>
+                        <outlet property="elementViewTwo" destination="BFM-iw-YyK" id="h8o-Vz-KJ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,8 +67,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
